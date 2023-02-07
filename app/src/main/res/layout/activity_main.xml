@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
+
 
 <!--Her er en kommentar -->
 
@@ -32,14 +32,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        android:hint="Enter a number" />
+        android:hint="Enter a number"
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/Number2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        android:hint="Enter a second number" />
+        android:hint="Enter a second number"
+        android:inputType="number" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,7 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="Divide" />
+            android:text="Divide"
+            android:onClick="clickButton"/>
     </LinearLayout>
 
 </LinearLayout>
